@@ -1,22 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1 className="Centered-title">Spamming and Phishing Detector</h1>
+        <div className="Centered-content">
+          <textarea className="Centered-textbox" placeholder="Enter text" />
+          <button className="Centered-button">Submit</button> <br/>
+          <p className="Centered-text">Spamming percentage: </p>
+          <p className="Centered-text">Phishing percentage: </p>
+        </div>
       </header>
     </div>
   );
